@@ -58,6 +58,7 @@ for i=1:length(timeOrdering)
 end
 
 % Append extra marks to additonal mark structure
+EEG.marks.extra_info = [];
 for i=1:length(extraMarks)
     indexC = strfind(currentOrder,extraMarks{i});
     index = find(not(cellfun('isempty',indexC)));
